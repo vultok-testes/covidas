@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+
+    <!-- covidas css -->
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="servicos.css" />
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="imagens/favicon.png" />
+    <!-- //favicon-->
+
+    <title>Covidas - Agende sua consulta</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img class="img-logo" src="imagens/logo.png"
+                alt="logo da empresa escrito Covidas e simbolo de +" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><span lang="en">Home </span> <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicos.html">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Insira o Texto Aqui"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Covidas na recuperação pós COVID-19</h3>
+                <p class="text-center">Facilitamos a sua interação com os profissionais da área da saúde... Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 text-center">
+                <h3 class="text-center">Fisioterapia</h3>
+                <img class="rounded imagem-fluida" src="imagens/fisioterapia.jpg" alt="Serviço de fisioterapia">
+                <p class="text-center legenda">O serviço de fisioterapia visa ajudar as pessoas afetadas pelo COVID-19 na sua recuperação. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+                <h3 class="text-center">Psicologia</h3>
+                <img class="rounded imagem-fluida" src="imagens/psicologia.png" alt="Serviço de psicologia">
+                <p class="text-center legenda">O serviço de Psicologia Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center">Agende sua consulta</h3>
+                <p class="text-center">Escolha a data / hora que melhor se encaixa no seu cronograma e a especialidade desejada</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                      <label for="dataConsulta">Data da consulta:</label>
+                      <input id="dataConsulta" tabindex="0" type="date" class="form-control" name="dataConsulta" value="2020-09-26">
+                    </div>
+                    <div class="form-group">
+                        <label for="horario">Horário:</label>
+                        <select class="form-control" id="horario">
+                            <option>8:00</option>
+                            <option>8:30</option>
+                            <option>9:30</option>
+                            <option>10:00</option>
+                            <option>10:30</option>
+                            <option>11:00</option>
+                            <option>11:30</option>
+                            <option>12:00</option>
+                            <option>13:30</option>
+                            <option>14:00</option>
+                            <option>14:30</option>
+                            <option>15:00</option>
+                            <option>15:30</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Especialidade:</label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="radioFisioterapia" name="especialidades">
+                            <label class="custom-control-label" for="radioFisioterapia">Fisioterapia</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="radioPsicologia" name="especialidades">
+                            <label class="custom-control-label" for="radioPsicologia">Psicologia</label>
+                        </div>
+                    </div>
+
+                    <p>Profissionais disponíveis na data/hora selecionados: </p>
+                    <div class="form-group grupo-cards">
+                        <div class="card">
+                            <img class="card-img-top" alt="Foto de perfil do Psicólogo Jefferson Silva" src="imagens/dr1.jpg" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Jefferson Silva</h4>
+                                <p class="card-text">Psicólogo com 5+ anos de experiência</p>
+                                <button type="button" class="btn btn-primary">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Agendar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" alt="Foto de perfil da Psicóloga Juliana Martins" src="imagens/dr2.jpg" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Juliana Martins</h4>
+                                <p class="card-text">Psicóloga com mais de 7 anos de experiência</p>
+                                <button type="button" class="btn btn-primary">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Agendar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" alt="Foto de perfil do Psicólogo Júlio Andrade" src="imagens/dr4.jpg" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Júlio Andrade</h4>
+                                <p class="card-text">Psicólogo formado em São Carlos com 3 anos de experiência</p>
+                                <button type="button" class="btn btn-primary">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Agendar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" alt="Foto de perfil da Psicóloga Roberta Pereira" src="imagens/dr3.jpg" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Roberta Pereira</h4>
+                                <p class="card-text">Psicóloga com mais de 6 anos de experiência</p>
+                                <button type="button" class="btn btn-primary">
+                                    <i class="far fa-calendar-alt"></i>
+                                    Agendar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+
+        <div class="row duvidas-extras">
+            <div class="col-12">
+                <h3 class="text-center">Ficou com alguma dúvida ou prefere agendar por telefone?</h3>
+                <p class="text-center"><a href="contato.html">Entre em contato conosco</a> ou ligue no (16) 3333-3333</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="col-12 container">
+            <div class="row pl-4 pt-3">
+                <div class="col-lg-3">
+                    <a href="#" class="d-inline-flex">
+                        <i class="fas fa-phone"></i>
+                        <p class="pl-2 pt-2">Fale com a gente (16) 3333-3333</p>
+                    </a>
+
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="d-inline-flex">
+                        <i class="fas fa-envelope"></i>
+                        <p class="pl-2 pt-2">E-mail: contato@covidas.com.br</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 ">
+                    <a href="#" class="d-inline-flex">
+                        <i class="fas fa-info-circle"></i>
+                        <p class="pl-2 pt-2">Mais Informações >></p>
+                    </a>
+                </div>
+                <div class="col-lg-3 d-inline-flex">
+                    <a href="#">
+                        <i class="fab fa-youtube pr-3"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook pr-3"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram pr-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <hr>
+                <p class="text-center">© 2023 Covidas </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

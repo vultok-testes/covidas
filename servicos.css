@@ -1,0 +1,33 @@
+body > .container {
+  margin-top: 130px;
+}
+
+.imagem-fluida {
+  max-height: 300px;
+  max-width: 100%;
+}
+
+.legenda {
+  padding-top: 15px;
+  font-size: 1.1rem;
+}
+
+.duvidas-extras {
+  padding-top: 20px;
+}
+
+.form-group > .card {
+  width: 300px;
+  margin: 8px;
+}
+
+.grupo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-card {
+  border: 1px solid gray;
+}
