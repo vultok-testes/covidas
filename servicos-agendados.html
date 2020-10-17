@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+
+    <!-- covidas css -->
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="servicos.css" />
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="imagens/favicon.png" />
+    <!-- //favicon-->
+
+    <title>Covidas - Vizualizar seus agendamentos</title>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-logo" src="imagens/logo.png" alt="logo da empresa escrito Covidas e simbolo de +" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><span lang="en">Home </span> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicos.html">Agendar Serviço</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicos-agendados.html">Vizualizar Agendamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Insira o Texto Aqui" aria-label="Search" />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="text-center">Vizualize aqui os seus agendamentos</h3>
+          <p class="text-center">
+            Nesta página você pode vizualizar e rever seus agendamentos... Lorem ipsum dolor sit amet consectetur, adipisicing elit
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2>Psicologia em 16/10/2020</h2>
+          <div class="card" style="max-width: 400px">
+            <img class="card-img-top" src="imagens/dr1.jpg" alt="Foto de perfil do Dr. Marcos Rocha" style="width: 100%" />
+            <div class="card-body">
+              <h4 class="card-title">Dr. Marcos Rocha</h4>
+              <p class="card-text">Agendamento feito em 26/09/2020, às 20h20.</p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-top: 1rem !important">
+                Detalhes
+              </a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cancelModal" style="margin-top: 1rem !important">
+                Cancelar agendamento
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h2>Fisioterapia em 20/10/2020</h2>
+          <div class="card" style="max-width: 400px">
+            <img class="card-img-top" src="imagens/dr4.jpg" alt="Foto de perfil do Dr. Anderson Andrade" style="width: 100%" />
+            <div class="card-body">
+              <h4 class="card-title">Dr. Anderson Andrade</h4>
+              <p class="card-text">Agendamento feito em 12/10/2020, às 15h14.</p>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="margin-top: 1rem !important">
+                Detalhes
+              </a>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cancelModal" style="margin-top: 1rem !important">
+                Cancelar agendamento
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal de detalhes -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Detalhes do Agendamento</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat quia optio a? Beatae nemo eum vero sed et.
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal de cancelar -->
+      <div class="modal fade" id="cancelModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Cancelar o Agendamento</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">O agendamento será removido da sua agenda. Tem certeza que deseja cancelar o agendamento?</div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar agendamento</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row duvidas-extras">
+        <div class="col-12">
+          <h3 class="text-center">Ficou com alguma dúvida ou prefere agendar por telefone?</h3>
+          <p class="text-center"><a href="contato.html">Entre em contato conosco</a> ou ligue no (16) 3333-3333</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodape">
+      <div class="col-12 container">
+        <div class="row pl-4 pt-3">
+          <div class="col-lg-3">
+            <a href="#" class="d-inline-flex">
+              <i class="fas fa-phone"></i>
+              <p class="pl-2 pt-2">Fale com a gente (16) 3333-3333</p>
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <a href="#" class="d-inline-flex">
+              <i class="fas fa-envelope"></i>
+              <p class="pl-2 pt-2">E-mail: contato@covidas.com.br</p>
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <a href="#" class="d-inline-flex">
+              <i class="fas fa-info-circle"></i>
+              <p class="pl-2 pt-2">Mais Informações >></p>
+            </a>
+          </div>
+          <div class="col-lg-3 d-inline-flex">
+            <a href="#">
+              <i class="fab fa-youtube pr-3"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook pr-3"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram pr-3"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <hr />
+          <p class="text-center">© 2023 Covidas</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
